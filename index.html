@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textbox {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="textbox"></div>
+
+    <script>
+
+
+
+        //메모장으로 sub 텍스트 가져오기, 서버에 올려야 보임
+
+        $(function(){
+
+            $.get("./text1.txt", function(data) {
+
+            $("#textbox").html(data);
+
+            })     
+
+
+
+        });
+
+
+
+        </script>
+
+</body>
+</html>
